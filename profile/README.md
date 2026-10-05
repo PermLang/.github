@@ -6,7 +6,10 @@ system commands) and flags any pull request that reaches something new, before
 it's merged.
 
 Built for the age of AI-written code, where one added line can send customer
-data somewhere new, and the tests still pass.
+data somewhere new, and the tests still pass. It also covers what AI agents
+change besides code (workflow permissions, secrets, install scripts), flags the
+**tools you give an AI model** that could run commands or send data anywhere,
+and enforces where secrets may go.
 
 ```bash
 npm install --save-dev permlang
